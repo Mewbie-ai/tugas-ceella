@@ -138,11 +138,9 @@ input.pas {
 .logo {
   margin: 0 auto;
 }
-.form-control {
-}
 @media (max-width: 768px) {
   .screen-1 {
-    min-width: 300px;
+    min-width: 75%;
   }
   .screen-1 .footer {
     gap: 10em;
