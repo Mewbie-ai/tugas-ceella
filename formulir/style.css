@@ -1,0 +1,38 @@
+body {
+    margin : 0px;
+    text-align:center;
+}
+h1 {
+    font-family:monospace !important;
+}
+p {
+    text-align: justify;
+}
+label {
+    font-weight: normal !important;
+}
+.buttonChange:hover {
+    background-color:rgb(29, 31, 84);
+}
+.kotak {
+    margin: auto;
+    padding:3%;
+    border-style: solid;
+    border-width: 1px;
+    border-color:blue;
+    width: 80%;
+}
+#liputan {
+    text-align: left;
+    display:block;
+}
+#kotak_liputan {
+    display:block;
+}
+#publikasi {
+    text-align: left;
+    display:none;
+}
+#kotak_publikasi {
+    display:none;
+}
