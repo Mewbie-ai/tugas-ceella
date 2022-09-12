@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FORMULIR</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <h1><b>Form Liputan</b></h1>
+  <div class="btn-group btn-group-lg" role="group">
+    <button type="button" class="btn btn-primary" onclick="changeLiputan()">Liputan</button>
+    <button type="button" class="btn btn-primary" onclick="changePublikasi()">Publikasi</button>
+  </div>
+  <br/><br/>
+  <div class="kotak" id="kotak_liputan">
+    <form id="liputan">
+      <br/>
+      <p>Hai Sobat GENTA, terima kasih sudah mengundang Pers Mahasiswa untuk melakukan liputan. 
+        Silakan isi data di bawah ini dan jangan lupa mengirimkan surat undangan liputan ke email genta@petra.ac.id. 
+        Jika ada pertanyaan seputar liputan, silakan menghubungi OA GENTA (ID Line: @tdy8464u atau bit.ly/linegenta). 
+        Terima kasih, Tuhan memberkati.
+      </p>
+
+      <label for="nama">Nama Acara : </label>
+      <input id="nama" class="form-control" type="text"><br/>
+
+      <label for="pengada">Pihak yang mengadakan : </label>
+      <input id="pengada" class="form-control" type="text"><br/>
+
+      <label for="tema">Tema Acara : </label>
+      <input id="tema" class="form-control" type="text"><br/>
+
+      <label for="tanggal">Tanggal & Waktu Acara : <br></label>
+      <input id="tanggal" class="form-control" type="date">
+      <input id="waktu" class="form-control" type="time"><br/>
+
+      <label>Cangkupan Acara</label><br/>
+      <input id="fakultas" type="radio" name="cangkupan">
+      <label for="fakultas">Fakultas</label><br/>
+      <input id="universitas" type="radio" name="cangkupan">
+      <label for="universitas">Universitas</label><br/>
+      <input id="regional" type="radio" name="cangkupan">
+      <label for="regional">Regional</label><br/>
+      <input id="nasional" type="radio" name="cangkupan">
+      <label for="nasional">Nasional</label><br/>
+      <input id="internasional" type="radio" name="cangkupan">
+      <label for="internasional">Internasional</label><br/><br/>
+
+      <label>Online/Onsite</label><br/>
+      <input id="online" type="radio" name="online_onsite">
+      <label for="online">Online</label><br/>
+      <input id="onsite" type="radio" name="online_onsite">
+      <label for="onsite">Onsite</label><br/><br/>
+
+      <label for="kontak">Kontak Pengurus Acara : </label>
+      <input id="kontak" class="form-control" type="text"><br/>
+
+      <label for="narahubung">Narahubung Acara : </label>
+      <input id="narahubung" class="form-control" type="text"><br/>
+
+      <label for="instagram">Instagram Acara : </label>
+      <input id="instagram" class="form-control" type="text"><br/>
+
+      <label>Poster Acara</label><br/>
+      <input type="file" class="form-control"><br/>
+
+      <label>Surat Undangan</label><br/>
+      <p>Surat undangan liputan dapat mengikuti format berikut, atau mengikuti format surat Lembaga Kemahasiswaan masing-masing. 
+        Contoh format surat dapat diunduh melalui link (petra.id/ContohSuratUndanganLiputan)
+      </p>
+      <input type="file" class="form-control"><br/>
+
+      <input class="form-control" type="submit"><br/>
+    </form>
+  </div>
+  <div class="kotak" id="kotak_publikasi">
+    <form id="publikasi">
+      <br/>
+      <p>Hai Sobat GENTA, silakan isi data di bawah ini untuk permohonan publikasi. 
+        Jika ada pertanyaan seputar publikasi, silakan menghubungi OA GENTA (id line: @tdy8464u). 
+        Terima kasih. Tuhan memberkati.
+      </p>
+
+      <label for="nama">Nama Acara : </label>
+      <input id="nama" class="form-control" type="text"><br/>
+
+      <label for="instagram">Instagram Acara : </label>
+      <input id="instagram" class="form-control" type="text"><br/>
+
+      <label>Poster Acara</label><br/>
+      <input type="file" class="form-control"><br/>
+
+      <label for="caption">Caption Acara : </label>
+      <input id="caption" class="form-control" type="text"><br/>
+
+      <label for="tanggal">Jadwal Publikasi : <br></label>
+      <input id="tanggal" class="form-control" type="date">
+      <input id="waktu" class="form-control" type="time"><br>
+
+      <input class="form-control" type="submit"><br/>
+    </form>
+  </div>
+  <br/><br/>
+</body>
+</html>
