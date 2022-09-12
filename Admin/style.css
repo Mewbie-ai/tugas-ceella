@@ -25,9 +25,6 @@ body {
   gap: 2em;
   justify-content: space-between;
 }
-.screen-1 .logo {
-  /* margin-top: -3em; */
-}
 .screen-1 .email {
   background: white;
   box-shadow: 0 0 2em #e6e9f9;
@@ -113,9 +110,6 @@ body {
 button {
   cursor: pointer;
 }
-
-.input-group-append {
-}
 .flex {
   display: flex;
 }
@@ -124,4 +118,9 @@ button {
 }
 input.pas {
   width: 100%;
+}
+.logo {
+  margin: 0 auto;
+}
+.form-control {
 }
