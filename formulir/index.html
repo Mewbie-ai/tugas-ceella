@@ -10,13 +10,13 @@
 </head>
 
 <body>
-  <h1 class="formTitle"><b>Form Liputan</b></h1>
-  <div class="btn-group btn-group-lg" role="group">
-    <button type="button" class="btn btn-primary" onclick="changeLiputan()">Liputan</button>
-    <button type="button" class="btn btn-primary" onclick="changePublikasi()">Publikasi</button>
-  </div>
-  <br/><br/>
-  <div class="kotak" id="kotak_liputan">
+  <div class="kotak">
+    <h1 id="titleForm">Form Liputan</h1>
+    <br/><br/>
+    <div class="btn-group btn-group-lg d-flex justify-content-center" role="group">
+      <button type="button" class="btn btn-primary" onclick="changeLiputan()">Liputan</button>
+      <button type="button" class="btn btn-primary" onclick="changePublikasi()">Publikasi</button>
+    </div>
     <form id="liputan">
       <br/>
       <p>Hai Sobat GENTA, terima kasih sudah mengundang Pers Mahasiswa untuk melakukan liputan. 
@@ -25,50 +25,50 @@
         Terima kasih, Tuhan memberkati.
       </p>
 
-      <label for="nama">Nama Acara : </label>
+      <label for="nama" class="labelPertanyaan">Nama Acara : </label>
       <input id="nama" class="form-control" type="text"><br/>
 
-      <label for="pengada">Pihak yang mengadakan : </label>
+      <label for="pengada" class="labelPertanyaan">Pihak yang mengadakan : </label>
       <input id="pengada" class="form-control" type="text"><br/>
 
-      <label for="tema">Tema Acara : </label>
+      <label for="tema" class="labelPertanyaan">Tema Acara : </label>
       <input id="tema" class="form-control" type="text"><br/>
 
-      <label for="tanggal">Tanggal & Waktu Acara : <br></label>
-      <input id="tanggal" class="form-control" type="date">
-      <input id="waktu" class="form-control" type="time"><br/>
+      <label class="labelPertanyaan">Tanggal & Waktu Acara :</label>
+      <div class="input-group">
+        <input id="tanggal" class="form-control" type="date">
+        <input id="waktu" class="form-control" type="time">
+      </div><br/>
 
-      <label>Cangkupan Acara</label><br/>
-      <input id="fakultas" type="radio" name="cangkupan">
-      <label for="fakultas">Fakultas</label><br/>
-      <input id="universitas" type="radio" name="cangkupan">
-      <label for="universitas">Universitas</label><br/>
-      <input id="regional" type="radio" name="cangkupan">
-      <label for="regional">Regional</label><br/>
-      <input id="nasional" type="radio" name="cangkupan">
-      <label for="nasional">Nasional</label><br/>
-      <input id="internasional" type="radio" name="cangkupan">
-      <label for="internasional">Internasional</label><br/><br/>
+      <label class="labelPertanyaan">Cangkupan Acara : </label><br/>
+      <select class="form-select" form="liputan">
+        <option disabled hidden selected>Cangkupan Acara</option>
+        <option value="fakultas">Fakultas</option>
+        <option value="universitas">Universitas</option>
+        <option value="regional">Regional</option>
+        <option value="nasional">Nasional</option>
+        <option value="internasional">Internasional</option>
+      </select><br/>
 
-      <label>Online/Onsite</label><br/>
+      <label class="labelPertanyaan">Online/Onsite : </label><br/>
       <input id="online" type="radio" name="online_onsite">
-      <label for="online">Online</label><br/>
+      <label for="online">Online</label>
       <input id="onsite" type="radio" name="online_onsite">
       <label for="onsite">Onsite</label><br/><br/>
 
-      <label for="kontak">Kontak Pengurus Acara : </label>
+      <label for="kontak" class="labelPertanyaan">Kontak Pengurus Acara : </label>
       <input id="kontak" class="form-control" type="text"><br/>
 
-      <label for="narahubung">Narahubung Acara : </label>
+      <label for="narahubung" class="labelPertanyaan">Narahubung Acara : </label>
       <input id="narahubung" class="form-control" type="text"><br/>
 
-      <label for="instagram">Instagram Acara : </label>
+      <label for="instagram" class="labelPertanyaan">Instagram Acara : </label>
       <input id="instagram" class="form-control" type="text"><br/>
 
-      <label>Poster Acara</label><br/>
+      <label class="labelPertanyaan">Poster Acara :</label><br/>
       <input type="file" class="form-control"><br/>
 
-      <label>Surat Undangan</label><br/>
+      <label class="labelPertanyaan">Surat Undangan :</label><br/>
       <p>Surat undangan liputan dapat mengikuti format berikut, atau mengikuti format surat Lembaga Kemahasiswaan masing-masing. 
         Contoh format surat dapat diunduh melalui link (petra.id/ContohSuratUndanganLiputan)
       </p>
@@ -76,8 +76,6 @@
 
       <input class="form-control" type="submit"><br/>
     </form>
-  </div>
-  <div class="kotak" id="kotak_publikasi">
     <form id="publikasi">
       <br/>
       <p>Hai Sobat GENTA, silakan isi data di bawah ini untuk permohonan publikasi. 
@@ -85,25 +83,26 @@
         Terima kasih. Tuhan memberkati.
       </p>
 
-      <label for="nama">Nama Acara : </label>
+      <label for="nama" class="labelPertanyaan">Nama Acara : </label>
       <input id="nama" class="form-control" type="text"><br/>
 
-      <label for="instagram">Instagram Acara : </label>
+      <label for="instagram" class="labelPertanyaan">Instagram Acara : </label>
       <input id="instagram" class="form-control" type="text"><br/>
 
-      <label>Poster Acara</label><br/>
+      <label class="labelPertanyaan">Poster Acara :</label><br/>
       <input type="file" class="form-control"><br/>
 
-      <label for="caption">Caption Acara : </label>
-      <input id="caption" class="form-control" type="text"><br/>
+      <label for="caption" class="labelPertanyaan">Caption Acara : </label>
+      <input id="caption" class="form-control" type="text" maxlength="30"><br/>
 
-      <label for="tanggal">Jadwal Publikasi : <br></label>
-      <input id="tanggal" class="form-control" type="date">
-      <input id="waktu" class="form-control" type="time"><br>
+      <label class="labelPertanyaan">Jadwal Publikasi :</label>
+      <div class="input-group">
+        <input id="tanggal" class="form-control" type="date">
+        <input id="waktu" class="form-control" type="time">
+      </div><br/>
 
       <input class="form-control" type="submit"><br/>
     </form>
   </div>
-  <br/><br/>
 </body>
 </html>
