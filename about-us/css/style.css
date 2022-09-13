@@ -503,9 +503,17 @@ section {
   color: #012970;
 }
 
-// Form Publikasi
+/* // Form Publikasi */
 .buttonChange:hover {
   background-color: rgb(29, 31, 84);
+}
+.ataskotak {
+  margin: auto;
+  padding: 3%;
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  /* border-color: blue; */
+  width: 70%;
 }
 .kotak {
   margin: auto;
@@ -514,6 +522,7 @@ section {
   border-width: 1px;
   border-color: blue;
   width: 80%;
+  border-radius: 20px;
 }
 #liputan {
   text-align: left;
@@ -529,3 +538,36 @@ section {
 #kotak_publikasi {
   display: none;
 }
+
+.box-button {
+  display: inline-flex;
+  margin: auto;
+  padding: 2%;
+  width: 70%;
+}
+.box-button button {
+  background-color: #DAD9DE;
+  color: #3A3A3C;
+  border: none;
+  padding: 0.5em 2em;
+  font-weight: bold;
+  outline: none;
+  font-size: 1.5em;
+}
+.box-button button:nth-child(1) {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.box-button button:nth-child(2) {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.box-button button:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.activeBox {
+  background-color: #0988A9 !important;
+  color: #DAD9DE !important;
+}
+
