@@ -520,7 +520,9 @@ section {
   /* border-color: blue; */
   width: 70%;
 }
-.kotak {
+
+/* Style untuk form */
+.kotak-form {
   margin: auto;
   padding: 3%;
   border-style: solid;
@@ -533,16 +535,17 @@ section {
   text-align: left;
   display: block;
 }
-#kotak_liputan {
-  display: block;
-}
 #publikasi {
   text-align: left;
   display: none;
 }
-#kotak_publikasi {
-  display: none;
+.label-pertanyaan {
+  font-weight: bold;
 }
+#link-acara,#link {
+  display:none;
+}
+/* Style untuk form*/
 
 .box-button {
   display: flex;
