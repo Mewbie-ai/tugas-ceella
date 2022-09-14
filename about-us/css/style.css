@@ -540,14 +540,14 @@ section {
 }
 
 .box-button {
-  display: inline-flex;
+  display: flex;
   margin: auto;
   padding: 2%;
   width: 70%;
 }
 .box-button button {
-  background-color: #DAD9DE;
-  color: #3A3A3C;
+  background-color: #dad9de;
+  color: #3a3a3c;
   border: none;
   padding: 0.5em 2em;
   font-weight: bold;
@@ -567,7 +567,6 @@ section {
   transition: 0.2s ease-in-out;
 }
 .activeBox {
-  background-color: #0988A9 !important;
-  color: #DAD9DE !important;
+  background-color: #0988a9 !important;
+  color: #dad9de !important;
 }
-

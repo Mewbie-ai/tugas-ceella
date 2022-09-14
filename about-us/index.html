@@ -135,17 +135,17 @@
             <h2>FORM</h2>
             <p>Form Publikasi dan Liputan Persma</p>
           </header>
-          
+
           <div class="row justify-content-center">
             <!-- <h1><b>Form Liputan</b></h1> -->
             <!-- <div class="btn-group btn-group-lg ataskotak" role="group">
               <button type="button" class="btn btn-primary" onclick="changeLiputan()">Liputan</button>
               <button type="button" class="btn btn-primary" onclick="changePublikasi()">Publikasi</button>
             </div> -->
-              <div class="box-button">
-                <button type="button" class="activeBox" onclick="changeLiputan()">Liputan</button>
-                <button type="button" onclick="changePublikasi()">Publikasi</button>
-              </div>
+            <div class="box-button justify-content-center">
+              <button type="button" class="activeBox" onclick="changeLiputan()">Liputan</button>
+              <button type="button" onclick="changePublikasi()">Publikasi</button>
+            </div>
             <br /><br />
             <div class="kotak" id="kotak_liputan">
               <form id="liputan">
@@ -388,11 +388,11 @@
     <!-- Bagian Button Form -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
-        $(document).ready(function(){
-              $('.box-button').on('click', 'button', function() {
-                $(this).addClass('activeBox').siblings().removeClass('activeBox');
-            });
+      $(document).ready(function () {
+        $(".box-button").on("click", "button", function () {
+          $(this).addClass("activeBox").siblings().removeClass("activeBox");
         });
+      });
     </script>
   </body>
 </html>
