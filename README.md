@@ -52,21 +52,22 @@ Frontend Web Admin Login :
 - Welcome page (Nama Peliput/Divisi nya terus dikasih kata semangat juga gais wkwkwk) di hardcode ajah :D
 - Navbar (navbar nya ada Liputan, Publikasi ,Home)
   Format File :
-  Public_html > Form
-  > admin
-  > index.php (ini gk ush dibuat dulu aja)
-  > login.php
-  > liputan.php (ini gk ush dibuat)
-  > publikasi.php (ini gk ush dibuat)
-  > welcome.php
-  > index.php
-  > css
-  > Style.css
-  > Blabla.css
-  > js
-  > blabla.js
-  > assets
-  > (bebas)
+  Public_html 
+    Form
+      admin
+        index.php (ini gk ush dibuat dulu aja)
+        login.php
+        liputan.php (ini gk ush dibuat)
+        publikasi.php (ini gk ush dibuat)
+        welcome.php
+      index.php
+      css
+      Style.css
+      Blabla.css
+      js
+      blabla.js
+      assets
+      (bebas)
   > Frontend Page add Admin di dalam login:
 - Input nrp doang
 - Button add admin
