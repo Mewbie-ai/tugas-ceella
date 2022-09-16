@@ -518,6 +518,11 @@ section {
 }
 
 /* Style untuk form */
+@media (max-width: 768px) {
+  .kotak-form {
+    font-size:14px;
+  }
+}
 .kotak-form {
   margin: auto;
   padding: 3%;
@@ -526,10 +531,6 @@ section {
   border-color: blue;
   width: 80%;
   border-radius: 20px;
-}
-.logo-button {
-  width: 30px;
-  height: 30px;
 }
 #liputan {
   text-align: left;
@@ -545,19 +546,24 @@ section {
 #link-acara,#link {
   display:none;
 }
-/* Style untuk form*/
 
+/* Style untuk button*/
+.logo-button {
+  width: 2em;
+  height: 2em;
+}
 .box-button {
   display: flex;
   margin: auto;
   padding: 2%;
   width: 70%;
+  text-align:center;
 }
 .box-button button {
   background-color: #dad9de;
   color: #3a3a3c;
   border: none;
-  padding: 0.5em 2em;
+  padding: 0.5em 1em 0.5em 1em;
   font-weight: bold;
   outline: none;
   font-size: 1.5em;
