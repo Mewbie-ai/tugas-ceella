@@ -549,24 +549,24 @@ section {
 
 /* Style untuk button*/
 .logo-button {
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
 }
 .box-button {
   display: flex;
   margin: auto;
   padding: 2%;
-  width: 70%;
-  text-align:center;
+  width: 75%;
 }
 .box-button button {
   background-color: #dad9de;
   color: #3a3a3c;
   border: none;
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 15px;
   font-weight: bold;
   outline: none;
   font-size: 1.5em;
+  text-align: center;
 }
 .box-button button:nth-child(1) {
   border-top-left-radius: 50px;

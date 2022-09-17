@@ -104,21 +104,13 @@ function changeFormOffline() {
   document.getElementById("link-acara").style.display = "none";
   document.getElementById("link").style.display = "none";
 }
-// Atribut data-max-words untuk caption
-document.querySelectorAll('input[data-max-words]').forEach(input => {
-  let maxWords = parseInt(input.getAttribute('data-max-words') || 0)
-  input.addEventListener('keydown', e => {
-    let target = e.currentTarget
-    // Split the text in the input and get the current number of words
-    let words = target.value.split(/\s+/).length
-    // If the word count is > than the max amount and a space is pressed
-    // Don't allow for the space to be inserted
-    if (!target.getAttribute('data-announce'))
-      // Note: this is a shorthand if statement
-      // If the first two tests fail allow the key to be inserted
-      // Otherwise we prevent the default from happening
-      words >= maxWords && e.keyCode == 32 && e.preventDefault()
-    else
-      words >= maxWords && e.keyCode == 32 && (e.preventDefault() || alert('Word Limit Reached'))
-  })
-})
+// Atribut max kata untuk caption
+$("#caption").on('keyup input', function(e) {
+  var target = e.currentTarget;
+  var words = target.value.split(/\s+/).length;
+  if(words > 30) {
+    $("#caption").val(function(index, value) {
+      return value.substr(0, value.length - 1);
+    })
+  }
+});
