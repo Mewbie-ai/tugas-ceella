@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin - Genta ❤️</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="image/logo genta.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="container">
+      <!-- partial:index.partial.html -->
+      <div class="screen-1">
+        <!-- <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="300" height="300" viewbox="0 0 640 480" xml:space="preserve"> -->
+        <img class="logo" src="./image/logo-full.png" alt="Logo Persma" width="300" viewbox="0 0 640 480" />
+
+        <div class="email">
+          <label for="email">Email</label>
+          <div class="sec-2 flex">
+            <ion-icon name="mail-outline"></ion-icon>
+            <!-- <input type="email" name="email" placeholder="c1422xxxx@john.petra.ac.id"/> -->
+            <div class="input-group mb-3 flex">
+              <input type="text" name="email" class="form-control" placeholder="c1422xxxx" aria-label="Masukan Email" aria-describedby="basic-addon2" required />
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@john.petra.ac.id</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <div class="sec-2">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input class="pas" type="password" name="password" placeholder="············" required />
+            <!-- <ion-icon class="show-hide" name="eye-outline"></ion-icon> -->
+          </div>
+        </div>
+        <button class="login">Login</button>
+        <div class="footer"><span>Signup</span><span>Forgot Password?</span></div>
+      </div>
+      <!-- partial -->
+    </div>
+  </body>
+</html>
