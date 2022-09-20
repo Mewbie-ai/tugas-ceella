@@ -105,12 +105,15 @@ function changeFormOffline() {
   document.getElementById("link").style.display = "none";
 }
 // Atribut max kata untuk caption
+function getPosition(string, subString, index) {
+  return string.split(subString, index).join(subString).length;
+}
 $("#caption").on('keyup input', function(e) {
   var target = e.currentTarget;
   var words = target.value.split(/\s+/).length;
   if(words > 30) {
     $("#caption").val(function(index, value) {
-      return value.substr(0, value.length - 1);
+      return value.substr(0, getPosition(value, ' ', 30));
     })
   }
 });
